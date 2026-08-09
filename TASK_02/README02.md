@@ -36,3 +36,9 @@ The experiment yielded mixed effectiveness of the safety guardrails depending on
 ## 6. Future Improvements & Ethical Considerations
 *   **Ethical Considerations:** Simulating misinformation poses dual-use risks, as the persuasive techniques mapped here could be utilized by bad actors to generate scalable fake news or financial panic.
 *   **Measurable Defenses:** To increase robustness against persuasive attacks, AI developers must implement **Semantic Intent Classifiers** at the API layer. Current safety filters often evaluate prompts in isolation. A measurable improvement would be an algorithm that evaluates the *cumulative trajectory* of a multi-turn conversation, shutting down the session if a user is iteratively steering the model toward generating realistic, un-disclaimed misinformation.
+
+## AI Disclosure & Acknowledgments
+
+* **AI Assistance:** Gemini (Google AI) was utilized for:
+    * Text formatting and markdown structure refinement.
+    * Prompt refinement 
