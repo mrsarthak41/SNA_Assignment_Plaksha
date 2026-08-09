@@ -92,7 +92,6 @@ If the dataset scales by **100×** (e.g., $V' = 100V, E' = 100E$):
 ├── wiki-Vote.txt.gz          # Downloaded network dataset
 ├── analysis_pipeline.ipynb   # Main execution notebook
 ├── README.md                 # Project documentation
-└── requirements.txt          # Python dependencies
 ```
 
 ### Dependencies
@@ -109,7 +108,7 @@ pip install pandas networkx
 ## 7. AI Disclosure & Acknowledgments
 
 * **AI Assistance:** Gemini (Google AI) was utilized as an interactive tutor and pair-programming assistant during development for:
-  * Code refining and optimization.
+  * Code learning, refining and optimization.
   * Conceptual learning of graph theory algorithms and Big-O computational bounds.
   * Text formatting and markdown structure refinement.
 * All code logic was implemented, executed, and validated independently.
