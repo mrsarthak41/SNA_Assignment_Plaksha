@@ -60,7 +60,7 @@ Four key centrality measures were computed to evaluate top influencers:
 
 #### Key Empirical Finding: Betweenness Centrality Efficiency
 During implementation, an experiment was conducted on the trade-off between exact vs. stochastic sampling for Betweenness Centrality:
-* **Without $k$ (Exact):** Running full evaluation required **~230 seconds** due to exhaustive shortest-path enumeration across all $\approx 7,000$ nodes ($O(V \cdot E)$).
+* **Without $k$ (Exact):** Running full evaluation required **~230 seconds** due to exhaustive shortest-path enumeration across all $\approx 7,000$ nodes (O(V.E)).
 * **With $k=100$:** Execution dropped to **under 2 seconds** while preserving the rank order of top global bridges.
 * **With $k=1000$:** Improved estimation precision with a modest runtime (~15 seconds).
 
