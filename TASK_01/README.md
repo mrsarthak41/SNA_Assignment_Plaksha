@@ -28,7 +28,7 @@ When evaluating potential datasets, two alternative SNAP datasets were considere
 
 **Justification for Choice:**
 1. **Semantic Clarity:** The Wikipedia Vote network represents explicit, directed peer-voting events for administrator elections. Directed edges ($A \to B$) have a unambiguous interpretation of trust/authority, unlike the dense comment-reply threads of Reddit.
-2. **Computational Tractability:** Exact calculation of global graph metrics—specifically Betweenness Centrality with time complexity $O(V \cdot E)$—becomes computationally prohibitive on single-node setups when $V > 30,000$. The Wikipedia dataset offers a scale large enough to display non-trivial social dynamics without requiring distributed clusters (e.g., Apache Spark).
+2. **Computational Tractability:** Exact calculation of global graph metrics—specifically Betweenness Centrality with time complexity O(V.E)—becomes computationally prohibitive on single-node setups when $V > 30,000$. The Wikipedia dataset offers a scale large enough to display non-trivial social dynamics without requiring distributed clusters (e.g., Apache Spark).
 
 ### Expected Challenges
 * **High Computational Burden:** Exact Betweenness Centrality scale quadratically with node/edge size.
