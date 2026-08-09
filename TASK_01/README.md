@@ -90,7 +90,7 @@ If the dataset scales by **100×** (e.g., $V' = 100V, E' = 100E$):
 
 ```text
 ├── wiki-Vote.txt.gz          # Downloaded network dataset
-├── analysis_pipeline.ipynb   # Main execution notebook
+├── Asgn_Task_01.ipynb   # Main execution notebook
 ├── README.md                 # Project documentation
 ```
 
@@ -100,7 +100,7 @@ pip install pandas networkx
 ```
 
 ### How to Run
-1. Open `analysis_pipeline.ipynb` in Jupyter Lab.
+1. Open `Asgn_Task_01.ipynb` in Jupyter Lab.
 2. Run all cells sequentially. The dataset will auto-download and execute end-to-end.
 
 ---
