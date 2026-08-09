@@ -15,6 +15,7 @@
 * **High Attack Success Rate (ASR):** The proposed Persuasive Adversarial Prompts (PAP) achieved an impressive 92%+ success rate in bypassing safety guardrails on top-tier models like Llama-2, GPT-3.5, and GPT-4.
 * **Structured Taxonomy:** The authors developed a comprehensive taxonomy featuring 40 distinct persuasion techniques categorized under 13 high-level strategy classes (e.g., logical appeal, authority endorsement, emotional manipulation).
 * **Black-Box & Model-Agnostic Applicability:** Unlike gradient-based attacks requiring internal model weights, PAP applies seamlessly to both open-weight (like Llama) and closed-source commercial APIs.
+* **Adaptive Defenses:** Adaptive defenses(more effective than existing defenses like mutation-based and detection-based defenses), initially tailored for PAPs, are also effective against other types of adversarial prompts.
 
 ---
 
@@ -22,6 +23,7 @@
 * **Ineffectiveness Against Specific Architectures:** The PAP methodology almost completely failed against Anthropic's Claude series, achieving only a 6% ASR on Claude 1 and 0% on Claude 2.
 * **Single-Turn Limitation:** The study primarily focuses on single-turn persuasive prompts rather than multi-turn, interactive dialogue sessions where persuasion techniques can be iteratively combined and escalated.
 * **Inadequacy of Existing Adaptive Defenses:** The evaluation revealed that current adaptive safety defenses fail against persuasive prompts because the underlying models inherently process and fulfill the context of the persuasive narrative.
+* **Advanced Models vs. Defenses:** The more advanced the models are, the less effective current defenses are.
 
 ---
 
@@ -37,9 +39,15 @@
 * **Targeted Claude Vulnerability Analysis:** Conducting deeper analysis into Claude's architectural alignment to understand its resilience and identify potential virtualization-based vulnerabilities.
 * **Linguistic Cue Analysis:** Analyzing fine-grained linguistic markers and keyword patterns embedded within effective persuasive prompts.
 
+
 ---
 
 ## 6. Author Improvement Strategy
 If acting as the primary author, the methodology would be enhanced in two key ways:
 1. **Automated Multi-Turn Attack Protocol:** Implement an automated secondary "Attacker AI" tasked with dynamically adapting persuasive strategies across a 5-to-10 turn conversation based on the target LLM's intermediate responses.
 2. **Intent-Based Defense Mechanism:** Complement the red-teaming analysis by developing a lightweight, trajectory-aware classifier at the API layer capable of detecting iterative persuasion attempts before prompt processing.
+
+## AI Disclosure & Acknowledgments
+
+* **AI Assistance:** Gemini (Google AI) was utilized for:
+    * Text formatting and markdown structure refinement.
