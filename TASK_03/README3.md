@@ -20,9 +20,8 @@
 ---
 
 ## 3. Weaknesses
-* **Ineffectiveness Against Specific Architectures:** The PAP methodology almost completely failed against Anthropic's Claude series, achieving only a 6% ASR on Claude 1 and 0% on Claude 2.
+* **Ineffectiveness Against Specific Architectures:** The PAP methodology almost completely failed against Anthropic's Claude series, achieving only a 6% ASR on Claude 1 and 0% on Claude 2. It is because the Claude models and other models use RLAIF (Bai et al., 2022), RL from AI Feedback
 * **Single-Turn Limitation:** The study primarily focuses on single-turn persuasive prompts rather than multi-turn, interactive dialogue sessions where persuasion techniques can be iteratively combined and escalated.
-* **Inadequacy of Existing Adaptive Defenses:** The evaluation revealed that current adaptive safety defenses fail against persuasive prompts because the underlying models inherently process and fulfill the context of the persuasive narrative.
 * **Advanced Models vs. Defenses:** The more advanced the models are, the less effective current defenses are.
 
 ---
